@@ -1,12 +1,45 @@
+body {
+    background-color: rgba(211, 211, 211, 0.498);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    /* grid-template-areas: "nav always";
+    grid-template-columns: max-content auto; */
+}
+
 nav {
-    background-color: green;
+    width:30%;
+    background-color: black;
+    padding: 0.8rem;
+
+    a {
+        text-decoration: none;
+        color: rgba(218, 213, 205, 0.893);
+        aside{
+            padding-top: 1rem;
+            padding-right:1rem;
+        }
+        h3{
+            color: white;
+        }
+        display: grid;
+        grid-template-columns: max-content 1fr;
+    }
+    /*When red button is toggled*/
+    &.open{
+        display: none;
+        
+    }
+    /* grid-area: nav; */
+    
 }
 
-nav.open {
-    background-color: hotpink;
-}
+ /* article.alwaysThere{
+    grid-area: always;
+ } */
 
-a.toggle {
+
+a.toggle{
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -15,3 +48,4 @@ a.toggle {
     border-radius: 50px;
     background-color: red;
 }
+
