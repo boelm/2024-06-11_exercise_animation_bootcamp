@@ -1,0 +1,66 @@
+header{
+    min-height: 20vh;
+}
+
+main {
+    height: 50vh;
+    width: 100vw;
+    background-color: rgba(110, 107, 107, 0.251);
+    position: relative;
+
+    .card{
+        /* height: 60%;
+        width: 20%; */
+        height: 8rem;
+        width: 4rem;
+        background-color: hotpink;
+        border: 1px dotted black;
+        position:absolute;
+        top: 20%;
+        left: 40%
+    }
+
+    transition: 0.5s all;
+    &:hover{
+        #card1{
+            background-color: red;
+            transform: rotate(40deg) translateX(4rem);
+        }
+        #card2{
+            background-color: orange;
+            transform: rotate(30deg) translateX(3rem);
+        }
+        #card3{
+            background-color: yellow;
+            transform: rotate(20deg) translateX(2rem);
+        }
+        #card4{
+            background-color: greenyellow;
+            transform: rotate(10deg) translateX(1rem);
+        }
+        #card5{
+            background-color: green;
+            transform: rotate(0) translateX(0);
+        }
+        #card6{
+            background-color: lightblue;
+            transform: rotate(-10deg) translateX(-1rem);
+        }
+        #card7{
+            background-color: darkblue;
+            transform: rotate(-20deg) translateX(-2rem);
+        }
+        #card8{
+            background-color: purple;
+            transform: rotate(-30deg) translateX(-3rem);
+        }
+        #card9{
+            background-color: pink;
+            transform: rotate(-40deg) translateX(-4rem);
+        }
+
+    }
+}
+
+
+
