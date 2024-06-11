@@ -1,0 +1,33 @@
+body {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-items: space-around; */
+    /* align-items: center; */
+    align-items: center;
+
+    main {
+        height: 50vh;
+        width: 100vw;
+        background-color: rgba(110, 107, 107, 0.304);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        button {
+            background-color: black;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            transition: 0.5s all;
+
+            &:hover{
+                background-color: red;
+                padding: 1em 2em;
+                transform: translateX(8rem);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            }
+        }
+    }
+}
+
