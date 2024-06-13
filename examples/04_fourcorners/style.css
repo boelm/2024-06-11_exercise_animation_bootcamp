@@ -1,0 +1,71 @@
+:root {
+    --white-square-side: 400px;
+    --little-square-side: 40px;
+    --dist-to-move: 180px;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: lightgrey;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        height: var(--white-square-side);
+        width: var(--white-square-side);
+        ;
+        background-color: white;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+
+        aside {
+            height: var(--little-square-side);
+            width: var(--little-square-side);
+            background-color: green;
+            cursor: pointer;
+            /* transition: 2s all ease-in-out; */
+        }
+    }
+}
+
+main aside:hover {
+    /* transform-origin: top bottom; */
+    animation: move-little-square 4s ease-in-out;
+}
+
+main:hover {
+    animation: dance-big-square 2s ease-in-out;
+}
+
+@keyframes move-little-square {
+    25% {
+        transform: translateX(360px);
+        background-color: blue;
+    }
+    50% {
+        transform: translate(360px, 360px);
+        background-color: red;
+    }
+    75% {
+        transform: translateY(360px);
+        background-color: yellow;
+    }
+}
+
+@keyframes dance-big-square {
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    75% {
+        transform: rotate(90deg);
+    }
+}
