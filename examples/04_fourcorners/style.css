@@ -40,7 +40,7 @@ main aside:hover {
 }
 
 main:hover {
-    animation: dance-big-square 2s ease-in-out;
+    /* animation: dance-big-square 2s ease-in-out; */
 }
 
 @keyframes move-little-square {
